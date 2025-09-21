@@ -1,0 +1,104 @@
+📦 Modelo de Caixa (Box Model) no CSS
+
+    O Box Model é a base do layout em CSS.
+    Ele define como cada elemento do HTML é interpretado pelo navegador: como uma caixinha.
+    Essa "caixinha" é composta de quatro partes principais (de dentro para fora):
+
+        1. Content (Conteúdo)
+
+        2. Padding (Preenchimento)
+
+        3. Border (Borda)
+
+        4. Margin (Margem)
+
+👉 Pense nisso como a anatomia de um elemento.
+
+
+
+1. Content (Conteúdo) 🟦
+
+    - É o coração do elemento, a parte que o usuário realmente vê.
+
+    - Onde ficam os textos, imagens, vídeos ou qualquer outro dado.
+
+    - Pode ter largura e altura específicas.
+
+        🔧 Propriedades principais:
+
+            - width → largura do conteúdo
+
+            - height → altura do conteúdo
+
+
+
+
+2. Padding (Preenchimento interno) 🟩
+
+    - Espaço entre o conteúdo e a borda.
+
+    - Garante que o texto ou imagem não encoste diretamente na borda.
+
+        🔧 Propriedades principais:
+
+            - padding-top → espaçamento interno no topo
+
+            - padding-right → espaçamento interno à direita
+
+            - padding-bottom → espaçamento interno embaixo
+
+            - padding-left → espaçamento interno à esquerda
+
+            - padding (shorthand) → define todos os lados de uma vez
+
+
+
+
+3. Border (Borda) 🟨
+
+    - Linha que envolve o conteúdo + o padding.
+
+    - Funciona como uma moldura visível do elemento.
+
+        🔧 Propriedades principais:
+
+            - border-width → espessura da linha
+
+            - border-style → estilo da linha (solid, dashed, dotted, etc.)
+
+            - border-color → cor da linha
+
+            - border (shorthand) → define tudo em uma única linha
+
+
+
+
+4. Margin (Margem) 🟧
+
+    - Espaçamento externo da caixinha.
+
+    - Cria distância entre o elemento e os vizinhos (outros elementos ou bordas da página).
+
+        🔧 Propriedades principais:
+
+            - margin-top → margem em cima
+
+            - margin-right → margem à direita
+
+            - margin-bottom → margem embaixo
+
+            - margin-left → margem à esquerda
+
+            - margin (shorthand) → define todas de uma vez
+
+
+
+🎯 Resumindo
+
+    - Content → o que aparece (texto, imagem, etc.)
+
+    - Padding → espaço interno entre conteúdo e borda
+
+    - Border → moldura em volta do elemento
+
+    - Margin → espaço externo, separando dos outros elementos

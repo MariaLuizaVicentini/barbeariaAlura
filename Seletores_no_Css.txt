@@ -1,0 +1,205 @@
+🎨 Principais Seletores do CSS
+
+#️⃣ 1. SELETOR DE TIPO
+    Significado:
+        --> Seleciona todos os elementos de um tipo específico (<p>, <h1>, <div>, <header>)
+
+    Uso:
+        --> Aplicar estilo global a um tipo de elemento
+    
+    Regra:
+        --> nomeDoElemento {
+            propriedade: valor; 
+            }
+
+    Exemplo:
+        div {
+            color: blue; #Todos as divs ficam azuis
+        }
+        
+
+#️⃣ 2. SELETOR DE CLASSE
+    Significado:
+        --> Seleciona elementos que têm o atributo class=""
+
+    Uso:
+        --> Quando quer aplicar o mesmo estilo a vários elementos diferentes
+
+    Regra:
+        --> .nomeDaClasse {
+            propriedade: valor;
+        }
+
+    Exemplo:
+        # todos os elementos da lista teram a fonte em negrito e calor vermelha
+        .lista {
+            font-weigth: bold;
+            color: red;
+        }
+
+
+#️⃣ 3. SELETOR DE ID
+    Significado:
+        --> Seleciona um elemento único pelo atributo id
+    
+    Uso:
+        --> Quando precisa aplicar estilo específico a um único elemento da página
+    
+    Regra:
+        #nomeDoId {
+            propriedade: valor;
+        }
+
+    Exemplo:
+        #itensProduto {
+            display: inline-block; 
+            text-align: center;
+            color: black;
+        }
+
+
+#️⃣ 4. SELETORES UNIVERSAIS 
+    Significado:
+        --> Seleciona todos os elementos da página
+
+    Uso:
+        --> Aplicar estilo base, como reset de margens/paddings
+
+    Regra:
+        * {
+            propriedade: valor;
+        }
+
+    Exemplo:
+    * {
+            margin: 0;
+            padding: 0;
+        }
+        
+
+#️⃣ 5. SELETORES DE DESCENDÊNCIA
+    Significado:
+        --> Seleciona elementos dentro de um elemento
+
+    Uso:
+        --> Aplicar estiolos somente se o elemento estiver dentro de outro
+    
+    Regra:
+        --> pai filho {
+            propriedade: valor;
+        }
+
+    Exemplo:
+        # todos os elementos do tipo paragrafo que estiverem dentro de uma div serão estilizados
+        div p {
+            color: green;
+        }
+
+
+#️⃣ 6. SELETORES DE FILHO DIRETO
+    Significado:
+        --> Seleciona apenas o filho imediato de um elemento
+
+    Uso:
+        --> quando não quer afetar netos ou descendentes mais profundos
+
+    Regra:
+        pai > filho{
+            propriedade: valor;
+        }
+
+    Exemplo:
+        ul > li {
+            list-style: none;
+        }
+
+
+#️⃣ 7. SELETORES DE IRMÃO
+    Adjacente (+)
+        Significado:
+            --> Seleciona o próximo irmão imediato
+        Uso:
+            Quando quer selecionar o primeiro elemento após o elemento declarado do lado esquerdo do sinal de +
+        
+        Regra:
+            elemento + elemento que será selecionado {
+                propriedade: valor;
+            }
+
+        Exemplo:
+            # seleciona apenas o primeiro paragrafo após o h1
+            h1 + p {
+                color: blue;
+            }
+        
+    Geral (~)
+        Significado:
+            --> Seleciona todos os irmãos posteriores
+        
+        Uso:
+            --> Seleciona todos os parágrafos que vêm depois do elemento declarado a esquerda do sinal de ~
+        
+        Regra:
+            elemento ~ elementos que serão selecionados depois do elemento a esquerda {
+                propriedade: valor;
+            }
+
+        Exemplo:
+            # seleciona todos os paragrafos que vem depois de um h1
+            h1 ~ p {
+                color: red;
+            }
+
+
+#️⃣ 8. SELETORES DE ATRIBUTO
+    Significado:
+        --> seleciona elementos com base em atributos HTML
+    
+    Uso:
+        --> Muito usado em formulários, links, ou inputs
+    
+    Regra:
+        a[href] { 
+            color: blue;
+            }           /* qualquer link que tenha href */
+        
+        a[target="_blank"] { 
+            color: red; 
+            }           /* links que abrem em nova aba */
+        
+        input[type="text"] { 
+            border: 1px solid black; 
+            }
+
+    Exemplo:
+
+
+#️⃣ 9. PSEUDO-CLASSES
+    Significado:
+        --> Seleciona elementos em estado específicos
+
+    Uso:
+        --> interações ou situações especiais
+    
+    Regra:
+        a:hover { color: orange; }     /* quando o mouse passa */
+        input:focus { border: 2px solid blue; } /* quando seleciona o campo */
+        p:first-child { font-weight: bold; }    /* primeiro filho */
+        li:nth-child(2) { color: green; }       /* segundo filho */
+
+
+#️⃣ 10. PSEUDO-ELEMENTOS
+    Significado:
+        --> Estiliza partes especificas de um elemento
+    
+    Uso:
+        --> adicionar detalhes sem precisar criar novas tags
+
+    Regra:
+        p::first-letter { font-size: 2em; }   /* primeira letra */
+        p::first-line { color: gray; }        /* primeira linha */
+        p::before { content: "→ "; }          /* insere conteúdo antes */
+        p::after { content: " ✓"; }           /* insere conteúdo depois */
+
+
+    

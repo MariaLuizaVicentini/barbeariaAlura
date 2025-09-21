@@ -1,0 +1,83 @@
+
+
+DICIONÁRIOS: HUMANOS x COMPUTADOR
+
+    🆎 ALFABETO (usado no nosso dia a dia):
+    - Possui 26 letras → de A até Z.
+    - Exemplo: A, B, C, D... até Z.
+
+
+    0️⃣1️⃣ SISTEMA BINÁRIO (usado na computação):
+    - Só existem 2 símbolos possíveis → 0 e 1.
+    - É a base da computação → tudo no computador (imagens, sons, textos) é convertido em sequências de 0 e 1.
+
+
+    🔢 SISTEMA DECIMAL (o que usamos normalmente):
+    - Possui 10 símbolos → 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+    - É o sistema mais comum para representar números.
+
+
+    #️⃣ SISTEMA HEXADECIMAL (usado bastante em cores na web):
+    - Possui 16 símbolos:
+        - Do 0 até o 9 → representam os números de 0 até 9.
+        - Depois usa letras A até F → representam os valores 10 até 15.
+    - Assim, os valores possíveis são:
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+    - Muito usado em HTML/CSS para definir cores.
+    - Exemplo:
+        #000000 → Preto (todos os valores em 0)
+        #FFFFFF → Branco (todos os valores no máximo, ou seja, F)
+
+
+
+👀 COMO NÓS ENXERGAMOS AS CORES
+
+    - Os nossos olhos têm células chamadas "cones".
+    - Existem 3 tipos de cones, cada um sensível a uma faixa de luz:
+        🔴 Vermelho (R)
+        🟢 Verde (G)
+        🔵 Azul (B)
+
+    - O cérebro recebe as informações desses cones e combina os sinais.
+    - A partir dessas combinações, conseguimos enxergar milhões de cores.
+    - Exemplo:
+        - Se o cone vermelho e verde são estimulados juntos → vemos AMARELO.
+        - Se os três cones (R, G, B) são estimulados igualmente → vemos BRANCO.
+
+
+
+🖥️ COMO O COMPUTADOR "ENXERGA" AS CORES
+
+    - O computador usa o mesmo princípio que o olho humano, mas em forma de números.
+    - Ele trabalha com o sistema RGB (Red, Green, Blue → Vermelho, Verde, Azul).
+    - Cada cor pode ter um valor de intensidade que varia de 0 até 255.
+
+    Exemplos em RGB:
+    • Branco → rgb(255, 255, 255) → todos os canais no máximo.
+    • Preto  → rgb(0, 0, 0)       → todos os canais no mínimo.
+    • Vermelho → rgb(255, 0, 0)
+    • Verde    → rgb(0, 255, 0)
+    • Azul     → rgb(0, 0, 255)
+    • Amarelo  → rgb(255, 255, 0) → vermelho + verde.
+
+
+
+#️⃣ CORES EM HEXADECIMAL (HTML/CSS)
+
+    - No HTML e no CSS usamos uma representação em hexadecimal para as cores.
+    - Estrutura: #RR GG BB
+    - RR = intensidade do vermelho (00 até FF)
+    - GG = intensidade do verde   (00 até FF)
+    - BB = intensidade do azul    (00 até FF)
+
+    Exemplos práticos:
+    - #FF0000 → Vermelho
+    - #00FF00 → Verde
+    - #0000FF → Azul
+    - #FFFF00 → Amarelo
+    - #FFFFFF → Branco
+    - #000000 → Preto
+
+    💡Dica: cada par de dígitos representa uma "força" daquela cor.
+        00 = nada de cor
+        FF = cor no máximo
